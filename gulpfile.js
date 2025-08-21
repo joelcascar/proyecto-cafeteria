@@ -105,3 +105,6 @@ exports.imagenwebp = imagenwebp;
 exports.imagenAvif = imagenAvif;
 // exports por defecto, solo se requiere escribir gulp para ejecutar la tarea.
 exports.default = series(imagenes, imagenwebp, imagenAvif, css, dev);
+
+// Deployment del proyecto
+exports.default = series(imagenes, imagenwebp, imagenAvif, css);
