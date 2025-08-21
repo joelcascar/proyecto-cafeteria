@@ -1,0 +1,15 @@
+// Importando el contenido de otro archivo
+// forma antigua
+/* @import 'header/header'; */
+// forma nueva
+/* @use "header/header"; */
+
+// El código principal se va a compilar primero
+@use "base";
+@use "header";
+@use "inicio";
+@use "internas";
+@use "footer";
+// Las utilidades siempre van a ser las ultimas en compilarse
+@use "utilidades";
+
