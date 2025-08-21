@@ -107,4 +107,4 @@ exports.imagenAvif = imagenAvif;
 exports.default = series(imagenes, imagenwebp, imagenAvif, css, dev);
 
 // Deployment del proyecto
-exports.default = series(imagenes, imagenwebp, imagenAvif, css);
+exports.build = css;
