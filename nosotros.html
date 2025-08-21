@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería SASS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <!-- Sección header -->
+    <header class="header header-nosotros">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="logo cafeteria">
+                </div>
+                <div class="nav-principal">
+                    <a href="index.html">Inicio</a>
+                    <a class="activo" href="nosotros.html">Nosotros</a>
+                    <a href="proceso.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+
+            <div class="texto-header">
+                <h1>Una nueva experiencia cada dia</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección principal-->
+    <main class="contenedor contenido-principal">
+        <h2><span>Conoce más</span>Sobre nosotros</h2>
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/nosotros_sidebar.avif" type="image/avif">
+                    <source srcset="build/img/nosotros_sidebar.webp" type="image/webp">
+                    <img loading="lazy" src="build/img/nosotros_sidebar.jpg" alt="" width="500" height="300">
+                </picture>
+            </div>
+            <div class="texto">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste molestiae corporis modi voluptate explicabo cupiditate nihil odit quisquam, adipisci molestias rerum! In ad voluptatum hic suscipit non culpa, delectus aspernatur.</p>
+                <blockquote>Excelente sabor</blockquote>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis eaque aspernatur, odit ea voluptates doloribus nihil officia ipsa accusantium velit sunt aliquam modi. Aperiam in voluptate, dolorum natus delectus culpa!</p>
+            </div>
+        </div>
+    </main>
+    <!-- Sección footer -->
+
+    <footer class="footer">
+        <div class="contenedor contenido-footer bg-white">
+            <div class="footer-box ubicacion">
+                <h3>Ubicación</h3>
+                <p>Nicolas Copernico 5980</p>
+                <p>Ciudad de México</p>
+            </div>
+            <div class="footer-box reservacion">
+                <h3>Reservación</h3>
+                <p>tel. 2314-3257</p>
+                <a href="tel:+23143257">Llamar</a>
+            </div>
+            <div class="footer-box horario">
+                <h3>Horario</h3>
+                <p>Lun-Je: 11:00 - 22:00</p>
+                <p>Vie-Sab: 09:00 - 24:00</p>
+                <p>Domingo: Cerrado</p>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados. La cafetería</p>
+    </footer>
+</body>
+</html>
