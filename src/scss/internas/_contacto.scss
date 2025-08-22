@@ -1,12 +1,33 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
+@include m.tablet{
+    .notavif{
+        &.notwebp{
+            .contenido-contacto{
+                background-image: url(../img/granos_cafe.jpg);
+            }
+        }
+    }
+    .avif{
+        .contenido-contacto{
+            background-image: url(../img/granos_cafe.avif);
+        }
+    }
+    .webp{
+        .contenido-contacto{
+            background-image: url(../img/granos_cafe.webp);
+        }
+    }  
+}
+
+
+
 .contenido-contacto{
     
 
     @include m.tablet{
         @include m.grid(2, v.$separacion);
-        background-image: url(../img/granos_cafe.jpg);
         background-repeat: no-repeat;
         background-position: right center;
         background-size: 40%;

@@ -40,6 +40,12 @@ function css(done){
     done();
 }
 
+// Tarea para JavaScript
+function JavaScript(){
+    return src("src/js/*.js")
+    .pipe(dest("build/js"))
+}
+
 // tarea para convertir imagenes de jpg a avif o webp
 
 function imagenes(done){
@@ -103,8 +109,9 @@ exports.dev = dev;
 exports.imagenes = imagenes;
 exports.imagenwebp = imagenwebp;
 exports.imagenAvif = imagenAvif;
+exports.JavaScript = JavaScript;
 // exports por defecto, solo se requiere escribir gulp para ejecutar la tarea.
 exports.default = series(imagenes, imagenwebp, imagenAvif, css, dev);
 
 // Deployment del proyecto
-exports.build = css;
+exports.build = series(css, JavaScript);

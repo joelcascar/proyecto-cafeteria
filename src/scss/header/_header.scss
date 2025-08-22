@@ -45,26 +45,76 @@
 }
 
 // header de cada pagina
-.header-inicio{
-    background-image: url(../img/header_inicio.jpg); /* la direccion va a empezar desde el app.css */
+
+.notavif{
+    &.notwebp{
+        .header-inicio{
+            background-image: url(../img/header_inicio.jpg);
+        }
+        .header-nosotros{
+            background-image: url(../img/header_nosotros.jpg);
+        }
+        .header-proceso{
+            background-image: url(../img/header_proceso.jpg);
+        }
+        .header-menu{
+            background-image: url(../img/header_menu.jpg);
+        }
+        .header-galeria{
+            background-image: url(../img/header_galeria.jpg);
+        }
+        .header-contacto{
+            background-image: url(../img/header_contacto.jpg);
+        }
+
+    }
 }
 
-.header-nosotros{
-    background-image: url(../img/header_nosotros.jpg);
+.avif{
+    .header-inicio{
+        background-image: url(../img/header_inicio.avif);
+    }
+    .header-nosotros{
+        background-image: url(../img/header_nosotros.avif);
+    }
+    .header-proceso{
+        background-image: url(../img/header_proceso.avif);
+    }
+    .header-menu{
+        background-image: url(../img/header_menu.avif);
+    }
+    .header-galeria{
+    background-image: url(../img/header_galeria.avif);
+    }
+    .header-contacto{
+        background-image: url(../img/header_contacto.avif);
+    }
 }
 
-.header-proceso{
-    background-image: url(../img/header_proceso.jpg);
+.webp{
+    .header-inicio{
+        background-image: url(../img/header_inicio.webp);
+    }
+    .header-nosotros{
+        background-image: url(../img/header_nosotros.webp);
+    }
+    .header-proceso{
+        background-image: url(../img/header_proceso.webp);
+    }
+    .header-menu{
+        background-image: url(../img/header_menu.webp);
+    }
+    .header-galeria{
+        background-image: url(../img/header_galeria.webp);
+    }
+
+    .header-contacto{
+        background-image: url(../img/header_contacto.webp);
+    }
+
 }
 
-.header-menu{
-    background-image: url(../img/header_menu.jpg);
-}
 
-.header-galeria{
-    background-image: url(../img/header_galeria.jpg);
-}
 
-.header-contacto{
-    background-image: url(../img/header_contacto.jpg);
-}
+
+
